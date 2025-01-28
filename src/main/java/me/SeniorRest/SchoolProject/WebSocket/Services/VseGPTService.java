@@ -24,7 +24,7 @@ public class VseGPTService {
     private final BalanceController balance;
     private final String API_URL = "https://api.vsegpt.ru/v1/chat/completions";
     @Value("${api.api-key}")
-    private int API_KEY;
+    private String API_KEY;
     public String processMessage(String key, List<Map<String, Object>> chatHistory) {
         try {
             // Формирование тела запроса
